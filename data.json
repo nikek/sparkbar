@@ -1,1 +1,67 @@
-[{"currency":"EUR","amount":15976,"week":"2017 w01"},{"currency":"EUR","amount":16607,"week":"2017 w02"},{"currency":"EUR","amount":16637,"week":"2017 w03"},{"currency":"EUR","amount":16402,"week":"2017 w04"},{"currency":"EUR","amount":21900,"week":"2017 w05"},{"currency":"EUR","amount":23423,"week":"2017 w06"},{"currency":"EUR","amount":23706,"week":"2017 w07"},{"currency":"EUR","amount":25545,"week":"2017 w08"},{"currency":"EUR","amount":23780,"week":"2017 w09"},{"currency":"EUR","amount":22439,"week":"2017 w10"},{"currency":"EUR","amount":23566,"week":"2017 w11"},{"currency":"EUR","amount":24812,"week":"2017 w12"},{"currency":"EUR","amount":10272,"week":"2017 w13"}]
+[
+  {
+    "currency": "EUR",
+    "amount": 1597,
+    "week": "2017 w01"
+  },
+  {
+    "currency": "EUR",
+    "amount": 1660,
+    "week": "2017 w02"
+  },
+  {
+    "currency": "EUR",
+    "amount": 1663,
+    "week": "2017 w03"
+  },
+  {
+    "currency": "EUR",
+    "amount": 1640,
+    "week": "2017 w04"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2190,
+    "week": "2017 w05"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2342,
+    "week": "2017 w06"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2370,
+    "week": "2017 w07"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2554,
+    "week": "2017 w08"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2378,
+    "week": "2017 w09"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2243,
+    "week": "2017 w10"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2356,
+    "week": "2017 w11"
+  },
+  {
+    "currency": "EUR",
+    "amount": 2481,
+    "week": "2017 w12"
+  },
+  {
+    "currency": "EUR",
+    "amount": 1027,
+    "week": "2017 w13"
+  }
+]
