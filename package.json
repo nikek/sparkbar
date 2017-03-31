@@ -13,11 +13,8 @@
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "start-storybook -p 9009 -s public",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -c .storybook -o docs"
+    "build-docs": "build-storybook -c .storybook -o docs"
   }
 }

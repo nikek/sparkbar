@@ -70,21 +70,6 @@ const realData = [
   }
 ].map(o => ({ y: o.amount }));
 
-const twelve = [
-  { x: '0', y: 50 },
-  { x: '1', y: 80 },
-  { x: '2', y: 88 },
-  { x: '3', y: 32 },
-  { x: '4', y: 52 },
-  { x: '5', y: 49 },
-  { x: '6', y: 88 },
-  { x: '7', y: 72 },
-  { x: '8', y: 91 },
-  { x: '9', y: 49 },
-  { x: '10', y: 63 },
-  { x: '11', y: 42 }
-];
-
 const twentyfive = [
   { x: '0', y: 50 },
   { x: '1', y: 80 },
@@ -167,13 +152,13 @@ const fifty = [
 ];
 
 storiesOf('SparkBar', module)
-  .add('No props', () => <SparkBar />)
-  .add('Empty array', () => <SparkBar data={[]} />)
+  .add('Pass regular data', () => <SparkBar data={realData} />)
   .add('Two data points', () => (
     <SparkBar data={[{ x: 1, y: 1 }, { x: 2, y: 3 }]} />
   ))
   .add('25 data points', () => <SparkBar data={twentyfive} />)
   .add('50 data points', () => <SparkBar data={fifty} />)
   .add('50 large', () => <SparkBar data={fifty} width="800" height="500" />)
-  .add('Coral color', () => <SparkBar data={twelve} color="coral" />)
-  .add('Real', () => <SparkBar data={realData} />);
+  .add('Coral color', () => <SparkBar data={realData} color="coral" />)
+  .add('No props', () => <SparkBar />)
+  .add('Empty array', () => <SparkBar data={[]} />);
