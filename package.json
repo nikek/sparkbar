@@ -1,7 +1,32 @@
 {
   "name": "sparkbar",
   "version": "0.1.0",
+  "description": "Convey your data with small bars",
   "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 9009 -s public",
+    "test": "jest --watchAll",
+    "build": "webpack --optimize-minimize && build-storybook -c .storybook -o docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nikek/sparkbar.git"
+  },
+  "keywords": [
+    "sparkbar",
+    "graph",
+    "vis",
+    "visualisation",
+    "minimal",
+    "react",
+    "d3"
+  ],
+  "author": "Niklas Ek <ek.niklas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikek/sparkbar/issues"
+  },
+  "homepage": "https://github.com/nikek/sparkbar#readme",
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
     "jest": "^19.0.2",
@@ -12,11 +37,5 @@
     "d3-scale": "^1.0.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
-  },
-  "scripts": {
-    "start": "npm run storybook",
-    "storybook": "start-storybook -p 9009 -s public",
-    "test": "jest --watchAll",
-    "build": "webpack --optimize-minimize && build-storybook -c .storybook -o docs"
   }
 }
