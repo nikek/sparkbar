@@ -1,13 +1,13 @@
 {
   "name": "sparkbar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convey your data with small bars",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
     "test": "jest --watchAll",
     "build": "webpack --optimize-minimize && build-storybook -c .storybook -o docs",
-    "prepublish": "npm run build"
+    "prepublish": "webpack --optimize-minimize"
   },
   "repository": {
     "type": "git",
