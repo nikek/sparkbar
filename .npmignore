@@ -6,3 +6,4 @@ public
 .storybook
 .npmignore
 webpack.config.js
+yarn.lock
