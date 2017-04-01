@@ -6,7 +6,8 @@
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
     "test": "jest --watchAll",
-    "build": "webpack --optimize-minimize && build-storybook -c .storybook -o docs"
+    "build": "webpack --optimize-minimize && build-storybook -c .storybook -o docs",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
