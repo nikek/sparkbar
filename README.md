@@ -15,11 +15,6 @@ Use [Prettier](https://github.com/prettier/prettier), note the file `.vscode/set
 ```
 yarn start
 ```
-## Test
-```
-yarn test
-```
-## Build the docs
-```
-yarn run build-docs
-```
+This will: 
+1. Start Storybook on localhost:9009
+2. Run tests on save

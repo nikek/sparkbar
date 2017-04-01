@@ -1,11 +1,13 @@
 {
   "name": "sparkbar",
   "version": "0.1.0",
-  "private": true,
+  "main": "index.js",
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
-    "react-scripts": "0.9.5",
-    "storyshots": "^3.2.2"
+    "concurrently": "^3.4.0",
+    "jest": "^19.0.2",
+    "storyshots": "^3.2.2",
+    "webpack": "^2.3.2"
   },
   "dependencies": {
     "d3-scale": "^1.0.5",
@@ -13,8 +15,9 @@
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "start": "start-storybook -p 9009 -s public",
-    "test": "react-scripts test --env=jsdom",
-    "build-docs": "build-storybook -c .storybook -o docs"
+    "start": "concurrently --kill-others \"npm run storybook\" \"npm run test\"",
+    "storybook": "start-storybook -p 9009 -s public",
+    "test": "jest --watchAll",
+    "build": "webpack --optimize-minimize && build-storybook -c .storybook -o docs"
   }
 }
